@@ -1,0 +1,268 @@
+/* 
+@font-face {
+  font-family: "Wulkan Display";
+  src: url("../assets/fonts/WulkanDisplayLight.woff2") format("woff2"),
+    url("../assets/fonts/WulkanDisplayLight.woff") format("woff");
+} */
+
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+  background-color: #1E1E1E;
+  width: 100vw;
+  overflow-x: hidden;
+  color: white;
+  font-size: 1vw;
+  font-family: sans-serif;
+  background-image: url('../assets/img/bg-main.svg');
+
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+
+/* @media (max-width: 800px) { */
+  .container {
+    margin: 0 auto;
+    max-width: 800px;
+    overflow-x: hidden;
+    padding: 0 5%;
+    border-bottom: 1px solid #eac8b62a;
+  }
+
+  .hero {
+    /* display: flex;
+    flex-direction: column; */
+
+  }
+
+  .hero_h1 {
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 0;
+
+    background: -webkit-linear-gradient(#777575, #EAC8B6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+  }
+
+  .hero_h2 {
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-top: 0px;
+    background: -webkit-linear-gradient(#eee, #EAC8B6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .hero_hero-imgs {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 27px;
+    width: 100%;
+    padding-bottom: 10px;
+  }
+
+  .girl-block {
+    position: relative;
+  }
+
+  .hero_img {
+    position: relative;
+    width: 200px;
+    border-radius: 20px;
+    z-index: -1;
+  }
+
+  .hero_img-before {
+    position: absolute;
+    border: 1px solid #EAC8B6;
+    width: 200px;
+    height: 280px;
+    border-radius: 20px;
+    top: 7px;
+    left: 7px;
+  }
+
+  .hero_img-after {
+    position: absolute;
+    border: 1px solid #EAC8B6;
+    width: 200px;
+    height: 280px;
+    border-radius: 20px;
+    top: -7px;
+    left: -7px;
+    z-index: -2;
+  }
+
+  .hero_img-before2 {
+    top: 7px;
+    left: -7px;
+  }
+
+  .hero_img-after2 {
+    top: -7px;
+    left: 7px;
+  }
+
+  .hero_p {
+    font-size: 18px;
+    font-family: 'IBM Plex Mono', sans-serif;
+    text-align: center;
+    margin-top: 45px;
+  }
+
+  .btn-registration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 250px;
+    height: 70px;
+    background: radial-gradient(circle, #EAC8B6 0%, #bf947fd8 100%);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+    margin: 50px auto;
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: #bf947fa6 0px 5px 15px;
+  }
+
+  .btn-registration:hover {
+    background: #EAC8B6;
+    box-shadow: #bf947f 0px 5px 15px;
+  }
+
+  .btn-registration img {
+    transform: rotate(180deg);
+    width: 35px;
+  }
+
+
+
+  /*******************about-hero**********************/
+  .about-hero {
+    margin-top: 50px;
+  }
+
+  .about-hero_item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-hero_img {
+    width: 270px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #EAC8B6;
+  }
+
+  .about-hero_img-before1,
+  .about-hero_img-before2 {
+    position: absolute;
+    border: 1px solid #EAC8B6;
+    width: 405px;
+    height: 250px;
+    border-radius: 20px;
+    top: 45px;
+    z-index: -1;
+  }
+
+  .about-hero_p {
+    font-size: 17px;
+    font-family: 'IBM Plex Mono', sans-serif;
+    text-align: center;
+    margin-bottom: 40px;
+
+  }
+
+
+  /***********for-whom*******************/
+
+  .for-whom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .for-whom_img-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin: 20px 0;
+
+  }
+
+  .for-whom_img {
+    width: 60px;
+  }
+
+  .for-whom_h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+    font-size: 30px;
+    background: -webkit-linear-gradient(#eee, #EAC8B6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .for-whom_ul {}
+
+  .for-whom_ul,
+  .about-course li {
+    font-size: 17px;
+    color: #bebebe;
+    font-family: 'IBM Plex Mono', sans-serif;
+
+  }
+
+  /**********about-course******************/
+
+  .about-course_img {
+    margin-top: -40px;
+    margin-bottom: 20px;
+    width: 100%;
+
+  }
+
+  .about-course {
+    margin-bottom: 45px;
+  }
+
+
+/***************** footer*******************/
+
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  height: 80px;
+}
