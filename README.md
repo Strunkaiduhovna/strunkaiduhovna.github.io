@@ -1,1 +1,1 @@
-# nataliia-karmolog.github.io
+# strunkaiduhovna.github.io
