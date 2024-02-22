@@ -54,10 +54,11 @@ a {
   text-align: center;
   margin-top: 90px;
   margin-bottom: 0;
+  color: #DC0F24;
 
-  background: -webkit-linear-gradient(#777575, #EAC8B6);
+  /* background: -webkit-linear-gradient(#777575, #EAC8B6);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
 
 }
 
@@ -66,9 +67,10 @@ a {
   font-family: 'Roboto', sans-serif;
   text-align: center;
   margin-top: 0px;
-  background: -webkit-linear-gradient(#eee, #EAC8B6);
+  color: #DC0F24;
+  /* background: -webkit-linear-gradient(#eee, #EAC8B6);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
 }
 
 .hero_hero-imgs {
@@ -163,7 +165,7 @@ a {
 
 .hero_p {
   font-size: 18px;
-  font-family: 'IBM Plex Mono', sans-serif;
+  /* font-family: 'IBM Plex Mono', sans-serif; */
   text-align: center;
   margin-top: 45px;
 }
@@ -175,14 +177,16 @@ a {
   gap: 5px;
   width: 250px;
   height: 70px;
-  background: radial-gradient(circle, #EAC8B6 0%, #bf947fd8 100%);
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+  /* background: radial-gradient(circle, #EAC8B6 0%, #bf947fd8 100%); */
+  background-color:#DC0F24;
+  /* box-shadow: 0px 3px 10px rgba(0, 0, 0, .25); */
   margin: 50px auto;
   color: black;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: bold;
   border-radius: 10px;
-  box-shadow: #bf947fa6 0px 5px 15px;
+  /* box-shadow: #bf947fa6 0px 5px 15px; */
+  box-shadow: #DC0F24 0px 5px 15px;
 }
 
 .btn-registration:hover {
@@ -237,7 +241,7 @@ a {
 
 .about-hero_p {
   font-size: 17px;
-  font-family: 'IBM Plex Mono', sans-serif;
+  /* font-family: 'IBM Plex Mono', sans-serif; */
   text-align: center;
   margin-bottom: 40px;
 
@@ -291,7 +295,7 @@ a {
 .about-course li {
   font-size: 17px;
   color: #bebebe;
-  font-family: 'IBM Plex Mono', sans-serif;
+  /* font-family: 'IBM Plex Mono', sans-serif; */
 
 }
 
