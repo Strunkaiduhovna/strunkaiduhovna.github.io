@@ -61,6 +61,9 @@ a {
   -webkit-text-fill-color: transparent; */
 
 }
+.hero_h1 span {
+  color: white;
+}
 
 .hero_h2 {
   font-size: 36px;
@@ -68,10 +71,12 @@ a {
   text-align: center;
   margin-top: 0px;
   color: #DC0F24;
-  /* background: -webkit-linear-gradient(#eee, #EAC8B6);
+  background: -webkit-linear-gradient(#eee, #DC0F24);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
+  -webkit-text-fill-color: transparent;
 }
+
+
 
 .hero_hero-imgs {
   position: relative;
@@ -178,7 +183,7 @@ a {
   width: 250px;
   height: 70px;
   /* background: radial-gradient(circle, #EAC8B6 0%, #bf947fd8 100%); */
-  background-color:#DC0F24;
+  background-color: #DC0F24;
   /* box-shadow: 0px 3px 10px rgba(0, 0, 0, .25); */
   margin: 50px auto;
   color: black;
@@ -233,6 +238,7 @@ a {
 }
 
 @media (max-width: 405px) {
+
   .about-hero_img-before1,
   .about-hero_img-before2 {
     width: 100%;
