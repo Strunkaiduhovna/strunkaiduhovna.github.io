@@ -383,6 +383,11 @@ a {
   border-radius: 20px;
   padding: 20px;
 }
+@media (max-width: 470px) {
+  .plan {
+    width: 100%;
+  }
+}
 
 .plan_img-wrapper {
   display: flex;
