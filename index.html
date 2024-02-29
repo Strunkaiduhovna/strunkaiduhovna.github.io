@@ -57,12 +57,12 @@
          <p class="hero_p">
             Вітаємо на унікальному інтенсиві! <br />
             Де ти разом з нутриціологом і астронумерологом позбудешся зайвих кг без звичних обмежень, голодувань і
-            підліку калорій та навчишся тримати результат завжди. <br/>Чому таке поєднання?
+            підліку калорій та навчишся тримати результат завжди. <br />Чому таке поєднання?
             Бо наша ціль допомогти схуднути тобі назавжди. А зробити це можливо тільки комплексно, пропрацювавши фізичне
             і духовне
          </p>
 
-         <a href="#" class="btn-registration">ОБРАТИ ПРОГРАМУ<img src="./assets/img/arrow.png" alt="arrow">
+         <a href="#plans" class="btn-registration">ОБРАТИ ПРОГРАМУ<img src="./assets/img/arrow.png" alt="arrow">
 
          </a>
       </div>
@@ -133,6 +133,86 @@
          </ul>
       </div>
 
+      <div class="container buy-the-plan" id="plans">
+         <h2 class="buy-the-plan_h2 wow animate__animated animate__fadeInDown">Обери свій варіант участі</h2>
+         <div class="plans">
+            <div class="plan">
+               <div class="plan_img-wrapper">
+                  <div class="plan_img-text">BASE</div>
+               </div>
+               <ul class="plan_text">
+                  <li class="plan_text-li">Прораховане збалансоване меню твого схуднення на 21 день.</li>
+                  <li class="plan_text-li">Прорахована матриця. Методичний матеріал для роботи з енергіями.</li>
+                  <li class="plan_text-li">15 розкритих тем з харчування, роботи гормонів, антистрес, дефіцити, рхп. </li>
+                  <li class="plan_text-li">Завдання для закріплення знань.</li>
+                  <li class="plan_text-li">7 тем від астронумеролога, робота з твоєю матрицею, медитація, групові регресії.
+                  </li>
+                  <li class="plan_text-li">Трансляції з нутриціологом та астронумерологом зворотній зв’язок раз в тиждень.
+                  </li>
+               </ul>
+               <div class="plan_price">666 <span>грн</span></div>
+               <a target="_blank" class="plan_btn" href="https://t.me/vln12345">Оплатити</span></a>
+            </div>
+   
+            <div class="plan">
+               <div class="plan_img-wrapper">
+                  <div class="plan_img-text">VIP</div>
+               </div>
+               <ul class="plan_text">
+                  <li class="plan_text-li">Зворотній зв’язок кожен день від експертів.</li>
+                  <li class="plan_text-li">Відеоконсультація з нутриціологом та астронумерологом особисто з кожною (30-40
+                     хвилин)</li>
+                  <li class="plan_text-li">Прораховане збалансована меню твого схуднення на 21 день</li>
+                  <li class="plan_text-li">15 розкритих тем з харчування, роботи гормонів, антистрес, дефіцити, рхп. </li>
+                  <li class="plan_text-li">Завдання для закріплення знань</li>
+                  <li class="plan_text-li">7 тем від астронумеролога, робота з твоєю матрицею, медитація, групові регресії.
+                  </li>
+                  <li class="plan_text-li">Трансляції з нутриціологом та астронумерологом зворотній зв’язок раз в тиждень.
+                  </li>
+                  <li class="plan_text-li">Відгуки</li>
+               </ul>
+               <div class="plan_price">3600 <span>грн</span></div>
+               <a target="_blank" class="plan_btn" href="https://t.me/vln12345">Оплатити</span></a>
+            </div>
+         </div>
+
+      </div>
+
+      <div class="container slider-body">
+         <div class="slider-container">
+            <div class="slider-wrapper" id="slider1">
+               <div class="slide" id="slide-1"></div>
+               <div class="slide" id="slide-2"></div>
+               <div class="slide" id="slide-3"></div>
+               <div class="slide" id="slide-4"></div>
+            </div>
+
+            <div class="prev" onclick="prevSlide('slider1')">&#10094;</div>
+            <div class="next" onclick="nextSlide('slider1')">&#10095;</div>
+
+            <!-- <div class="dots" id="dots-container"></div> -->
+         </div>
+      </div>
+
+      <div class="container slider-reviews">
+         <div class="slider-container">
+            <div class="slider-wrapper" id="slider2">
+               <div class="slide" id="slide-5"></div>
+               <div class="slide" id="slide-6"></div>
+               <div class="slide" id="slide-7"></div>
+               <div class="slide" id="slide-8"></div>
+               <div class="slide" id="slide-9"></div>
+               <div class="slide" id="slide-10"></div>
+               <div class="slide" id="slide-11"></div>
+            </div>
+
+            <div class="prev" onclick="prevSlide('slider2')">&#10094;</div>
+            <div class="next" onclick="nextSlide('slider2')">&#10095;</div>
+
+            <!-- <div class="dots" id="dots-container"></div> -->
+         </div>
+      </div>
+
       <footer>
          <a href="#"><img src="./assets/img/ins.png" alt="inst" width="40px"></a>
          <a href="#"><img src="./assets/img/tg.png" alt="tg" width="40px"></a>
@@ -147,6 +227,76 @@
    <script src="./js/wow.min.js"></script>
    <script>
       new WOW().init();
+   </script>
+   <script>
+      let currentSlide1 = 0;
+      let currentSlide2 = 0;
+
+      function showSlide(index, sliderId) {
+         const sliderWrapper = document.getElementById(sliderId);
+         const slides = sliderWrapper.querySelectorAll('.slide');
+         const dotsContainer = document.getElementById(`dots-container${sliderId.charAt(sliderId.length - 1)}`);
+
+         if (sliderId === 'slider1') {
+            currentSlide1 = index;
+         } else if (sliderId === 'slider2') {
+            currentSlide2 = index;
+         }
+
+         sliderWrapper.style.transform = `translateX(${-index * 100}%)`;
+
+         // Optional: Highlight active dot
+         const dots = dotsContainer.querySelectorAll('.dot');
+         dots.forEach(dot => dot.classList.remove('active'));
+         dots[index].classList.add('active');
+      }
+
+      function prevSlide(sliderId) {
+         const sliderWrapper = document.getElementById(sliderId);
+         const slides = sliderWrapper.querySelectorAll('.slide');
+         if (sliderId === 'slider1') {
+            currentSlide1 = (currentSlide1 - 1 + slides.length) % slides.length;
+            showSlide(currentSlide1, sliderId);
+         } else if (sliderId === 'slider2') {
+            currentSlide2 = (currentSlide2 - 1 + slides.length) % slides.length;
+            showSlide(currentSlide2, sliderId);
+         }
+      }
+
+      function nextSlide(sliderId) {
+         const sliderWrapper = document.getElementById(sliderId);
+         const slides = sliderWrapper.querySelectorAll('.slide');
+         if (sliderId === 'slider1') {
+            currentSlide1 = (currentSlide1 + 1) % slides.length;
+            showSlide(currentSlide1, sliderId);
+         } else if (sliderId === 'slider2') {
+            currentSlide2 = (currentSlide2 + 1) % slides.length;
+            showSlide(currentSlide2, sliderId);
+         }
+      }
+
+      // Optional: Create dots for navigation
+      const slides1 = document.querySelectorAll('#slider1 .slide');
+      const dotsContainer1 = document.getElementById('dots-container1');
+      slides1.forEach((_, index) => {
+         const dot = document.createElement('div');
+         dot.className = 'dot';
+         dot.onclick = () => showSlide(index, 'slider1');
+         dotsContainer1.appendChild(dot);
+      });
+
+      const slides2 = document.querySelectorAll('#slider2 .slide');
+      const dotsContainer2 = document.getElementById('dots-container2');
+      slides2.forEach((_, index) => {
+         const dot = document.createElement('div');
+         dot.className = 'dot';
+         dot.onclick = () => showSlide(index, 'slider2');
+         dotsContainer2.appendChild(dot);
+      });
+
+      // Show the initial slides
+      showSlide(currentSlide1, 'slider1');
+      showSlide(currentSlide2, 'slider2');
    </script>
 </body>
 

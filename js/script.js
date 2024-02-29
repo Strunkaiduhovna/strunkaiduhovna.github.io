@@ -16,3 +16,7 @@ function closeMenu(event) {
 }
 
 navList.addEventListener('click', closeMenu);
+
+
+
+/************************************************** */

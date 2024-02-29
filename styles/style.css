@@ -200,7 +200,7 @@ a {
   font-weight: bold;
   border-radius: 10px;
   /* box-shadow: #bf947fa6 0px 5px 15px; */
-  box-shadow: #DC0F24 0px 5px 15px;
+  box-shadow: #dc0f2352 0px 5px 15px;
 }
 
 .btn-registration:hover {
@@ -326,6 +326,269 @@ a {
 .about-course {
   margin-bottom: 45px;
 }
+
+
+
+
+
+/*******buy-the-plan*************************/
+
+.buy-the-plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding-bottom: 35px;
+  /* margin-bottom: 35px; */
+}
+
+.buy-the-plan_h2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  background: -webkit-linear-gradient(#eee, #EAC8B6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.plans {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+@media (max-width: 470px) {
+  .plans {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+}
+
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #EAC8B6;
+  width: 330px;
+  height: 790px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.plan_img-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 210px;
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  background-image: url('/assets/img/bg5.jpg');
+  background-size: cover;
+}
+
+.plan_img-text {
+  color: red;
+  font-size: 60px;
+  font-weight: bold;
+  background-color: black;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.plan_text {
+  padding: 0 0px 0 15px;
+  margin: 0;
+}
+
+.plan_text-li {
+  font-size: 17px;
+  color: #bebebe;
+}
+
+.plan_price {
+  color: red;
+  font-size: 35px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.plan_price span {
+  color: red;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.plan_btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 63%;
+  background-color: rgba(0, 0, 0, 0.459);
+  height: 50px;
+  border: 1px solid #eac8b657;
+  border-radius: 5px;
+  color: #EAC8B6;
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 15px 0px 15px 0px;
+}
+
+.plan_btn:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.178);
+}
+
+
+/******************slider*******************/
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  box-sizing: border-box;
+  height: 650px;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+/* Optional: Add styling for navigation buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -25px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Optional: Add styling for dots navigation */
+.dots {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 8px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot.active {
+  background-color: #717171;
+}
+
+#slide-1 {
+  background-image: url('/assets/img/s1.jpg');
+}
+
+#slide-2 {
+  background-image: url('/assets/img/s2.jpg');
+}
+
+#slide-3 {
+  background-image: url('/assets/img/s3.jpg');
+}
+
+#slide-4 {
+  background-image: url('/assets/img/s4.jpg');
+}
+
+.slider-reviews {
+  margin-bottom: 25px;
+}
+
+#slider2 {
+  height: 250px;
+}
+
+#slide-5 {
+  background-image: url('/assets/img/reviews/2.jpg');
+  height: 250px;
+}
+
+#slide-6 {
+  background-image: url('/assets/img/reviews/1.jpg');
+  height: 250px;
+
+}
+
+#slide-7 {
+  background-image: url('/assets/img/reviews/3.jpg');
+  height: 280px;
+
+}
+
+#slide-8 {
+  background-image: url('/assets/img/reviews/4.jpg');
+  height: 250px;
+
+}
+
+#slide-9 {
+  background-image: url('/assets/img/reviews/5.jpg');
+  height: 250px;
+
+}
+
+#slide-10 {
+  background-image: url('/assets/img/reviews/6.jpg');
+  height: 250px;
+
+}
+
+#slide-11 {
+  background-image: url('/assets/img/reviews/7.jpg');
+  height: 250px;
+
+}
+
+
 
 
 /***************** footer*******************/
